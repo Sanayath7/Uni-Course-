@@ -73,3 +73,43 @@ public class Main {
         System.out.println("Institution Age: " + uni.calculateAge(currentYear));
     }
 }
+
+
+
+ a Java code  - 
+In time of a institute is 09:00 PM and End time of working is 05:00 PM . Suppose Rahim, Karim, Fahim, Sohan, Kaku are the 5 workers. Now I have to show who leaves early before 5 PM . how early in Hour?
+use if else like i'm new at java
+
+
+
+public class WorkerDepartureCheck {
+    public static void main(String[] args) {
+        // Official working hours: 9:00 AM to 5:00 PM
+        final int OFFICIAL_END_HOUR = 17; // 5:00 PM in 24-hour format
+        
+        // Worker names and their departure times (in 24-hour format)
+        String[] workers = {"Rahim", "Karim", "Fahim", "Sohan", "Kaku"};
+        int[] departureTimes = {16, 17, 15, 14, 17}; // Corresponding departure hours
+        
+        System.out.println("Worker Early Departure Report");
+        System.out.println("Official working hours: 9:00 AM to 5:00 PM\n");
+        
+        // Check each worker's departure time
+        for (int i = 0; i < workers.length; i++) {
+            String worker = workers[i];
+            int departureHour = departureTimes[i];
+            
+            if (departureHour < OFFICIAL_END_HOUR) {
+                // Worker left early
+                int hoursEarly = OFFICIAL_END_HOUR - departureHour;
+                System.out.println(worker + " left early by " + hoursEarly + " hour(s).");
+            } else if (departureHour == OFFICIAL_END_HOUR) {
+                // Worker left on time
+                System.out.println(worker + " left on time at 5:00 PM.");
+            } else {
+                // Worker left late (though this case isn't in our data)
+                System.out.println(worker + " left late after 5:00 PM.");
+            }
+        }
+    }
+}
