@@ -1,0 +1,11 @@
+orthopedics;Dr.Jahangir Alom;MBBSinD.O;750
+dentists;Dr.kuddus;MBBSin;500
+gynecologists;Dr.Sabina Yasmin;MBBSinG.C;600
+physcians;Dr.Alim;MBBS;400
+pathologists;Dr.kobir;MBBS;1000
+cardiologists;Dr.Momin Khan;MBBS;650
+dentists;Dr.kuddus;MBBS;7000
+fever;Dr.surat;MBBS from Aiub;5
+1;12;2;2
+s;ff;12;500
+Skin;Carpenter;MBBS;700
