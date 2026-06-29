@@ -1,0 +1,17 @@
+/* Sample C program with comments */
+
+
+#include <stdio.h>
+
+int main() {
+    int a, c = 10;   /* initialize c */
+    int b = 15;
+
+    a = b + c;       // add b and c
+
+    int x = 5;
+    int y = 3;
+    int z = x * y + 2;
+
+    return 0;
+}

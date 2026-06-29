@@ -1,0 +1,35 @@
+; === Three-Address Code ===
+c = 10
+b = 15
+t0 = b + c
+a = t0
+x = 5
+y = 3
+t1 = x * y
+t2 = t1 + 2
+z = t2
+return 0
+
+; Generated Assembly (Mini C Compiler)
+
+section .text
+global main
+main:
+    MOV 10, c
+    MOV 15, b
+    MOV b, R0
+    ADD c, R0
+    MOV R0, t0
+    MOV t0, a
+    MOV 5, x
+    MOV 3, y
+    MOV x, R1
+    MUL y, R1
+    MOV R1, t1
+    MOV t1, R2
+    ADD 2, R2
+    MOV R2, t2
+    MOV t2, z
+    MOV 0, R0
+    RET
+    RET
